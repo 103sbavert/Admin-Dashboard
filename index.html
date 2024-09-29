@@ -2,40 +2,83 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Admin Dashboard</title>
-	<link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<div class="container">
-		<div class="side-panel">
-			<div class="branding">
-				<img src="./res/images/logo.png" alt="Brand Icon" class="logo">
-				<p class="title">Dashboard</p>
-			</div>
-		</div>
-		<div class="header">
-			<div class="main-toolbar">
-				<div class="searchbar">button.search-button>img.search-icon^input.search-field</div>
-				<button class="notification-button"></button>
-				<button class="user-profile-button">
-					<img src="" alt="User's profile picture" class="user-profile-icon">
-					<p class="user-name">Morgan Oakley</p>
-				</button>
-			</div>
+    <div class="sidebar">
+        <div class="sidebar-title">
+            <img class="icon" id="title-icon" src="images/dashboard.png">
+            <div class="text" id="title-text">Dashboard</div>
+        </div>
+        <div class="sidebar-section" id="first">
+            <img class="icon" src="images/home.png">
+            <div class="text">Home</div>
+            <img class="icon" src="images/profile.png">
+            <div class="text">Profile</div>
+            <img class="icon" src="images/messages.png">
+            <div class="text">Messages</div>
+            <img class="icon" src="images/history.png">
+            <div class="text">History</div>
+            <img class="icon" src="images/tasks.png">
+            <div class="text">Tasks</div>
+            <img class="icon" src="images/communities.png">
+            <div class="text">Communities</div>
+        </div>
 
-			<div class="user-toolbar">
-				<div class="user-greeting">
-					<img src="./res/images/user-profile.png" alt="" class="user-profile-icon">
-					<p class="greeting-text">Morgan Oakley</p>
-					<p class="user-display-name">@morgan</p>
-				</div>
-			</div>
-		</div>
-		<div class="content"></div>
-	</div>
+        <div class="sidebar-section" id="second">
+            <img class="icon" src="images/settings.png">
+            <div class="text">Settings</div>
+            <img class="icon" src="images/support.png">
+            <div class="text">Support</div>
+            <img class="icon" src="images/privacy.png">
+            <div class="text">Privacy</div>
+        </div>
+
+
+    </div>
+    <div class="topbar">
+        <div class="upper-topbar">
+            <div class="search">
+                <input type="search" class="search-field">
+                <img src="images/search.png" class="search-icon">
+            </div>
+            <div class="notification-button">
+                <img src="images/notifications.png" class="notification-icon">
+            </div>
+            <div class="profile-button">
+                <div class="profile-picture-holder">
+                    <img src="images/pfp.jpeg" class="profile-picture">
+                </div>
+                <div class="user-name">
+                    Morgan Oakley
+                </div>
+            </div>
+        </div>
+        <div class="lower-topbar">
+            <div class="user-greeting">
+                <img src="images/pfp.jpeg" class="profile-picture">
+                <div class="greeting">Hi there</div>
+                <div class="name">Morgan Oakley (@morgan)</div>
+            </div>
+            <button class="content-button">
+                YES
+            </button>
+            <button class="content-button">
+                YES
+            </button>
+            <button class="content-button">
+                YES
+            </button>
+        </div>
+
+    </div>
+    <div class="content">
+
+    </div>
 </body>
 
 </html>
